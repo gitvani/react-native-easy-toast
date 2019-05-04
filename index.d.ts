@@ -22,7 +22,8 @@ declare module "react-native-easy-toast" {
     show: (
       text: string | ReactNode,
       duration?: number,
-      callback?: () => void
+      callback?: () => void,
+      onPress?: () => void,
     ) => void;
     close: (duration?: number) => void;
   }
